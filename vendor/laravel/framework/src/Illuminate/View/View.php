@@ -85,7 +85,7 @@ class View implements ArrayAccess, Htmlable, ViewContract
      *
      * @throws \Throwable
      */
-   /* public function render(callable $callback = null)
+    public function render(callable $callback = null)
     {
         try {
             $contents = $this->renderContents();
@@ -104,7 +104,7 @@ class View implements ArrayAccess, Htmlable, ViewContract
             throw $e;
         }
     }
-*/
+
     /**
      * Get the contents of the view instance.
      *
@@ -119,7 +119,7 @@ class View implements ArrayAccess, Htmlable, ViewContract
 
         $this->factory->callComposer($this);
 
-        //$contents = $this->getContents();
+        $contents = $this->getContents();
 
         // Once we've finished rendering the view, we'll decrement the render count
         // so that each sections get flushed out next time a view is created and
@@ -134,11 +134,11 @@ class View implements ArrayAccess, Htmlable, ViewContract
      *
      * @return string
      */
- /*   protected function getContents()
+    protected function getContents()
     {
         return $this->engine->get($this->path, $this->gatherData());
     }
-*/
+
     /**
      * Get the data bound to the view instance.
      *
