@@ -27,7 +27,7 @@ class Response extends SymfonyResponse
      *
      * @throws \InvalidArgumentException
      */
-    public function __construct($content = '', $status = 200, array $headers = [])
+   /* public function __construct($content = '', $status = 200, array $headers = [])
     {
         $this->headers = new ResponseHeaderBag($headers);
 
@@ -35,14 +35,14 @@ class Response extends SymfonyResponse
         $this->setStatusCode($status);
         $this->setProtocolVersion('1.0');
     }
-
+*/
     /**
      * Set the content on the response.
      *
      * @param  mixed  $content
      * @return $this
      */
-    public function setContent($content)
+    /*public function setContent($content)
     {
         $this->original = $content;
 
@@ -66,7 +66,7 @@ class Response extends SymfonyResponse
 
         return $this;
     }
-
+*/
     /**
      * Determine if the given content should be turned into JSON.
      *

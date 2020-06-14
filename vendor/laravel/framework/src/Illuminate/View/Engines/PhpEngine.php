@@ -37,7 +37,7 @@ class PhpEngine implements Engine
         // We'll evaluate the contents of the view inside a try/catch block so we can
         // flush out any stray output that might get out before an error occurs or
         // an exception is thrown. This prevents any partial views from leaking.
-        try {
+       /* try {
             include $__path;
         } catch (Throwable $e) {
             $this->handleViewException($e, $obLevel);
@@ -45,7 +45,7 @@ class PhpEngine implements Engine
 
         return ltrim(ob_get_clean());
     }
-
+*/
     /**
      * Handle a view exception.
      *
